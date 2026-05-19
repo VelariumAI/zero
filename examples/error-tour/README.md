@@ -60,6 +60,8 @@ bin/zero check conformance/native/pass/std-fs-fallible-resources.0
 
 ## Inspect Repairs
 
+For full repair-loop walkthrough, see `../agent-repair-demo/`.
+
 ```sh
 bin/zero explain TAR002
 bin/zero fix --plan --json --target linux-musl-x64 conformance/native/fail/std-fs-target-unsupported.0

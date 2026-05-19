@@ -109,6 +109,8 @@ These examples are the small native workflow set used by docs and tests:
 | `error-tour/` | copyable failing commands and repaired fixtures for common diagnostics | `bin/zero explain TAR002` |
 | `agent-repair-demo/` | a JSON diagnostic, explanation, repair plan, applied edit, and re-check flow | `bin/zero check --json examples/agent-repair-demo/broken.0` |
 
+`examples/error-tour/` shows diagnostic categories. `examples/agent-repair-demo/` shows a complete repair loop.
+
 ## Build A Runnable Program
 
 Most examples are designed for `check`. To build and run an executable, use a CLI entry point:
