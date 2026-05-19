@@ -85,6 +85,18 @@ Core examples:
 
 Use the index in `examples/README.md` for the full learning order and copyable commands.
 
+Package example discoverability:
+
+- `examples/batch3-cli/`: package-local module graph with validate flow, named fs errors, and explicit allocation.
+- `examples/c-interop/`: C interop package with vendor header binding and native entry point.
+- `examples/direct-package-arrays/`: direct backend package split across array helpers and package main.
+- `examples/direct-package-call-order/`: direct backend cross-module call order across package files.
+- `examples/memory-package/`: target-neutral package imports and byte-span helper checks without hosted file I/O.
+- `examples/readall-cli/`: package-local imports with fixed-buffer reads and validation helpers.
+- `examples/resource-cli/`: package-local config and payload modules with hosted resource handling.
+- `examples/systems-package/`: multi-file package with `zero.json`, `defer`, and std helpers.
+- `examples/zero-hash/`: CLI package with hosted file seed, `readAll`, and CRC-32 bytes.
+
 Native Workflow Coverage:
 
 - arguments and environment: `examples/cli-file.0` reads `std.args` and `std.env`.

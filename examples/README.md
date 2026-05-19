@@ -111,6 +111,20 @@ These examples are the small native workflow set used by docs and tests:
 
 `examples/error-tour/` shows diagnostic categories. `examples/agent-repair-demo/` shows a complete repair loop.
 
+Package example discoverability map:
+
+| Directory | Purpose | Try it |
+| --- | --- | --- |
+| `examples/batch3-cli/` | package-local module graph with validate flow, named fs errors, and explicit allocation | `bin/zero check examples/batch3-cli` |
+| `examples/c-interop/` | C interop package with vendor header binding and native entry point | `bin/zero check examples/c-interop` |
+| `examples/direct-package-arrays/` | direct backend package split across array helpers and package main | `bin/zero check examples/direct-package-arrays` |
+| `examples/direct-package-call-order/` | direct backend cross-module call order across package files | `bin/zero check examples/direct-package-call-order` |
+| `examples/memory-package/` | target-neutral package imports and byte-span helper checks without hosted file I/O | `bin/zero build --target linux-musl-x64 examples/memory-package --out .zero/out/memory-package` |
+| `examples/readall-cli/` | package-local imports with fixed-buffer reads and validation helpers | `bin/zero check examples/readall-cli` |
+| `examples/resource-cli/` | package-local config and payload modules with hosted resource handling | `bin/zero check examples/resource-cli` |
+| `examples/systems-package/` | multi-file package with `zero.json`, `defer`, and std helpers | `bin/zero check examples/systems-package` |
+| `examples/zero-hash/` | CLI package with hosted file seed, `readAll`, and CRC-32 bytes | `bin/zero check examples/zero-hash` |
+
 ## Build A Runnable Program
 
 Most examples are designed for `check`. To build and run an executable, use a CLI entry point:
