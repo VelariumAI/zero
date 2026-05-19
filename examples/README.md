@@ -107,6 +107,7 @@ These examples are the small native workflow set used by docs and tests:
 | `memory-package/` | target-neutral package imports and byte-span helper checks without hosted file I/O | `bin/zero build --target linux-musl-x64 examples/memory-package --out .zero/out/memory-package` |
 | `direct-package-call-order/` | direct backend package merge order and cross-module helper calls | `bin/zero check examples/direct-package-call-order` |
 | `error-tour/` | copyable failing commands and repaired fixtures for common diagnostics | `bin/zero explain TAR002` |
+| `agent-repair-demo/` | a JSON diagnostic, explanation, repair plan, applied edit, and re-check flow | `bin/zero check --json examples/agent-repair-demo/broken.0` |
 
 ## Build A Runnable Program
 
